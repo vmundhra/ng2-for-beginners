@@ -4,11 +4,11 @@ import { AuthorService } from './author.service';
 
 @Component({
     selector: 'authors',
-    template: `<h2>Authors</h2>
+    template: `<h2>Authors (*ngFor with index property)</h2>
                {{ title }}
                <ul>
-                    <li *ngFor="let author of authors">
-                        {{ author }}
+                    <li *ngFor="let author of authors, let i = index">
+                       {{ i + 1}} - {{ author }}
                     </li>
                </ul>
               `,

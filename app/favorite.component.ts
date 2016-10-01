@@ -7,6 +7,12 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
             class = "glyphicon"
             [class.glyphicon-star] = "isFavorite"
             [class.glyphicon-star-empty] = "!isFavorite"
+
+            [ngClass] = "{
+                'glyphicon-star' : isFavorite,
+                'glyphicon-star-empty' : !isFavorite
+            }"
+
             (click) = "onClick()">
         </i>   
         `
