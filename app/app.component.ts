@@ -89,6 +89,10 @@ import { Component } from '@angular/core';
                     Content of who can contact me
                 </zippy>
 
+                <br />
+                <br />
+                <h2>Basic Form Demo</h2>
+                <contact-form></contact-form>
                 `
              
 })
@@ -110,11 +114,11 @@ export class AppComponent {
         myVote: 0
     }
 
-    onFavoriteChange($event:any) {
+    onFavoriteChange($event) {
         console.log($event);
     }
     
-    onVote($event:any) {
+    onVote($event) {
         console.log($event);
     }
 

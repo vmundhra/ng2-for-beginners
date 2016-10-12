@@ -18,6 +18,8 @@ import { BootstrapPanelComponent } from './bootstrap-panel.component';
 
 import { ZippyComponent } from './zippy.component';
 
+import { ContactFormComponent } from './contact-form.component';
+
 @NgModule({
   imports: [ BrowserModule ],
   declarations: [ 
@@ -36,7 +38,9 @@ import { ZippyComponent } from './zippy.component';
 
       BootstrapPanelComponent,
 
-      ZippyComponent
+      ZippyComponent,
+
+      ContactFormComponent
   ],
   bootstrap: [ AppComponent ]
 })
